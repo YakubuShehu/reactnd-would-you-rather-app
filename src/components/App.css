@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+button,
+span,
+.card {
+    font-family: 'Montserrat', sans-serif, serif;
+}
+
+.eight-bit-font {
+    font-family: 'Press Start 2P', 'Montserrat', sans-serif !important;
+    font-size: 10px;
+    color: rgb(48, 180, 48);
+}
+
+
+/**
+ * LOGIN STYLES
+ */
+
+#loginContainer {
+    max-width: 600px;
+}
+
+
+/**
+ * NAV STYLES
+ */
+
+.navbar {
+    font-family: 'Montserrat', sans-serif, serif;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    margin: 0 0.5em;
+}
+
+.navbar .nav-link.active {
+    border-radius: 8px;
+    background-color: rgba(0, 128, 0, 0.226);
+}
+
+.navbar .logged-in-as .nav-link {
+    color: #ffffff;
+}
+
+.ui.tabular.menu .active.item {
+    background-color: rgb(240, 240, 240) !important;
+}
+
+
+/**
+ * MAIN STYLES
+ */
+
+#homeContainer {
+    max-width: 800px;
+}
+
+#questionViewContainer,
+#questionResultsContainer,
+#newPollContainer,
+#leaderboardContainer,
+#error404Container {
+    max-width: 700px;
+    margin: 4em auto;
+}
+
+#unansweredPollContainer .card-header {
+    border-top: 3px solid rgb(91, 116, 228);
+    border-top: 3px solid rgb(100, 100, 100);
+}
+
+#unansweredPollContainer .eight-bit-font {
+    color: rgb(91, 116, 228);
+    color: rgb(100, 100, 100);
+}
+
+#answeredPollContainer .card-header {
+    border-top: 3px solid rgb(90, 156, 90);
+}
+
+#answeredPollContainer .eight-bit-font {
+    color: rgb(90, 156, 90);
+}
+
+
+#newPollContainer .card-body {
+    position: relative;
+}
+
+#newPollContainer .loader-overlay {
+    text-align: center;
+}
+
+#newPollContainer .loader-overlay::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: #f0f0f091;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+
+
+.left-border-col {
+    border-left: 1px solid rgb(235, 235, 235);
+}
