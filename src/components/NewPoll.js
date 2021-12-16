@@ -6,7 +6,7 @@ import { handleSaveQuestion } from '../actions/questions';
 
 
 /* Semantic UI for the spinner */
-import { Divider, Dimmer, Loader } from 'semantic-ui-react';
+import { Divider } from 'semantic-ui-react';
 
 /* Boostrap Components & Styles */
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +14,7 @@ import { Container, Spinner, Form, Card, Button, FloatingLabel } from 'react-boo
 
 /* Font Awesome and its Awesomeness */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faChevronLeft, faPlus, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faPlus, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 

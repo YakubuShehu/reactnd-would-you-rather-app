@@ -10,10 +10,6 @@ import { Container, Card } from 'react-bootstrap'
 /* Semantic UI for the complex tab data mapping */
 import { Tab } from 'semantic-ui-react';
 
-/* Font Awesome and its Awesomeness */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
-
 
 import PollCard from './PollCard';
 

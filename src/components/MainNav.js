@@ -9,7 +9,7 @@ import { Container, Navbar, Nav, Dropdown, NavDropdown, Image } from 'react-boot
 
 /* Font Awesome and its Awesomeness */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faPlusSquare, faListOl, faSignOutAlt, faCross, faUnlink } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faPlusSquare, faListOl, faSignOutAlt, faUnlink } from '@fortawesome/free-solid-svg-icons'
 
 
 
