@@ -3,7 +3,9 @@
 (x) Certain small portions of code in this project was copied directly from (or modified) following the guidance & inspiration from a blog post by [James Priest](https://james-priest.github.io/reactnd-project-would-you-rather/).
 
 
-(x) The overall layout of this project's app was made to resemble the 'Sample Project UI' example by the Instructors in the Udacity Classroom.
+(x) The overall layout of this project's app was made to resemble the 'Sample Project UI' example by the Instructors in the Udacity Classroom. 
+
+(x) The **majority** of the UI/UX components used in my project were from the [React Bootstrap Library](https://react-bootstrap.github.io/) and a few components from the [React Semantic UI Library](https://react.semantic-ui.com/).
 
 
 (x) The icons used were acquired from [FontAwesome](https://fontawesome.com/).
