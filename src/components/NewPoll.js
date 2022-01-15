@@ -28,10 +28,10 @@ export class NewPoll extends Component {
     };
 
     state = {
-        validSubmit: false,
-        isLoading: false,
         option1: '',
-        option2: ''
+        option2: '',
+        isLoading: false,
+        isValidSubmission: false
     };
 
     handleChange = e => {
@@ -56,7 +56,7 @@ export class NewPoll extends Component {
                 option1: '',
                 option2: ''
             });
-            this.setState({ validSubmit: true });
+            this.setState({ isValidSubmission: true });
         });
     };
 
