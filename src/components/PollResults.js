@@ -51,29 +51,26 @@ export class PollResults extends Component {
       return <Redirect to={`/`} />
     }
 
-
-    const optionOneVotes = question.optionOne.votes.length;
-    const optionTwoVotes = question.optionTwo.votes.length;
-    const totalVotes = optionOneVotes + optionTwoVotes;
+    const questionOneVotes = question.optionOne.votes.length;
+    const questionTwoVotes = question.optionTwo.votes.length;
+    const totalVotes = questionOneVotes + questionTwoVotes;
     const userVote = user.answers[question.id];
-    const optionOnePercentage = ((optionOneVotes / totalVotes) * 100).toFixed();
-    const optionTwoPercentage = ((optionTwoVotes / totalVotes) * 100).toFixed();
+    const questionOnePercentage = ((questionOneVotes / totalVotes) * 100).toFixed();
+    const questionTwoPercentage = ((questionTwoVotes / totalVotes) * 100).toFixed();
 
 
-    let option1Style = 'secondary', option2Style = 'secondary';
-    if (optionOneVotes > optionTwoVotes) {
-      option1Style = 'success';
-    } else if (optionTwoVotes > optionOneVotes) {
-      option2Style = 'success';
+    let questionOneStyle = 'secondary', questionTwoStyle = 'secondary';
+    if (questionOneVotes > questionTwoVotes) {
+      questionOneStyle = 'success';
+    } else if (questionTwoVotes > questionOneVotes) {
+      questionTwoStyle = 'success';
     }
 
     return (
       <Container id='questionResultsContainer' className='p-1'>
         <Card className='shadow-sm'>
           <Card.Header className='bg-light p-3'>
-            <span className='fw-bold eight-bit-font'>{author.name}</span>
-            &nbsp;
-            <span className=''>wants to know...</span>
+            <h1 className="fw-bold eight-bit-font text-center text-sm-start">RESULTS</h1>
           </Card.Header>
           <Card.Body>
             <Row>
@@ -81,25 +78,25 @@ export class PollResults extends Component {
                 <Image className="img-fluid border-dark" roundedCircle thumbnail src={author.avatarURL} width={125} draggable='false' />
               </Col>
               <Col className="my-3" sm={8}>
-                <h4 className="fw-bold eight-bit-font text-center text-sm-start">RESULTS</h4>
+                <span className='fw-bold eight-bit-font'>{author.name}</span> <span className=''>wants to know...</span>
                 <hr />
                 <h6 className="fw-bold text-center text-sm-start">Would you rather...</h6>
 
                 <Container className='p-4 bg-light border rounded text-left' id='questionsContainer'>
-                  
-                  <Card className="my-3" border={option1Style}>
+
+                  <Card className={`my-3 pt-4 border-${questionOneStyle} ${userVote === 'optionOne' ? 'chosen-answer' : ''}`}>
 
                     {userVote === 'optionOne' && <ChosenVoteLabel />}
 
                     <Card.Body>
                       <p className='fw-bold text-center'>{question.optionOne.text}</p>
                       <ProgressBar
-                        now={optionOnePercentage}
-                        label={`${optionOnePercentage}%`}
-                        variant={option1Style} />
+                        now={questionOnePercentage}
+                        label={`${questionOnePercentage}%`}
+                        variant={questionOneStyle} />
                       <hr />
                       <p className="text-muted text-center small fw-bolder">
-                        {optionOneVotes} out of {totalVotes} votes
+                        {questionOneVotes} out of {totalVotes} votes
                       </p>
                     </Card.Body>
                     {/* <Card.Footer className="text-center fw-light small">OPTION 1</Card.Footer> */}
@@ -107,19 +104,19 @@ export class PollResults extends Component {
                   </Card>
 
 
-                  <Card className="my-5" border={option2Style}>
+                  <Card className={`my-5 pt-4 border-${questionTwoStyle} ${userVote === 'optionTwo' ? 'chosen-answer' : ''}`}>
 
                     {userVote === 'optionTwo' && <ChosenVoteLabel />}
 
                     <Card.Body>
                       <p className='fw-bold text-center'>{question.optionTwo.text}</p>
                       <ProgressBar
-                        now={optionTwoPercentage}
-                        label={`${optionTwoPercentage}%`}
-                        variant={option2Style} />
+                        now={questionTwoPercentage}
+                        label={`${questionTwoPercentage}%`}
+                        variant={questionTwoStyle} />
                       <hr />
                       <p className="text-muted text-center small fw-bolder">
-                        {optionTwoVotes} out of {totalVotes} votes
+                        {questionTwoVotes} out of {totalVotes} votes
                       </p>
                     </Card.Body>
                     {/* <Card.Footer className="text-center fw-light small">OPTION 2</Card.Footer> */}

@@ -48,14 +48,13 @@ export class Leaderboard extends Component {
               {leaderboardData.map((user, position) => (
 
                 <Card
-                  className='shadow-sm mb-4'
+                  className='shadow-sm mb-4 pt-3'
                   key={position}
                   border={position < 3 ? podiumStyle[position] : "light"}
                 >
                   <span
-                    className={`position-absolute p-2 top-0 start-0 translate-middle badge bg-${position < 3 ? podiumStyle[position] : "secondary"}`}>
-                    <FontAwesomeIcon icon={faTrophy} />
-                    <span className="visually-hidden">Position #{position}</span>
+                    className={`position-absolute p-2 top-0 start-0 translate-start badge bg-${position < 3 ? podiumStyle[position] : "secondary"}`}>
+                    <FontAwesomeIcon icon={faTrophy} /> <span>Position #{position+1}</span>
                   </span>
                   <Card.Body>
                     <Row>

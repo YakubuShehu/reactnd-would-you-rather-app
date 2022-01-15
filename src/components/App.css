@@ -41,6 +41,7 @@ span,
 .navbar .nav-link {
     font-size: 14px;
     margin: 0 0.5em;
+    color: rgba(0,0,0,.55) !important;
 }
 
 .navbar .nav-link.active {
@@ -74,9 +75,8 @@ span,
     margin: 4em auto;
 }
 
-#unansweredPollContainer .card-header {
-    border-top: 3px solid rgb(91, 116, 228);
-    border-top: 3px solid rgb(100, 100, 100);
+#unansweredPollContainer .card {
+    border: 1px solid #d0d0d0;
 }
 
 #unansweredPollContainer .eight-bit-font {
@@ -84,12 +84,16 @@ span,
     color: rgb(100, 100, 100);
 }
 
-#answeredPollContainer .card-header {
-    border-top: 3px solid rgb(90, 156, 90);
+#answeredPollContainer .card {
+    border: 1px solid #b2d5c4;
 }
 
 #answeredPollContainer .eight-bit-font {
     color: rgb(90, 156, 90);
+}
+
+#questionsContainer .chosen-answer {
+    background-color: #dcff7b2e;
 }
 
 
@@ -118,3 +122,4 @@ span,
 .left-border-col {
     border-left: 1px solid rgb(235, 235, 235);
 }
+

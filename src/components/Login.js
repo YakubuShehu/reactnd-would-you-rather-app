@@ -44,6 +44,12 @@ export class Login extends Component {
           </Card.Footer>
         </Card>
 
+        <hr />
+
+        <p className='text-center'>
+          Icons acquired from the <a className='text-decoration-none' href="https://fontawesome.com/">FontAwesome Library</a>.
+        </p>
+
       </Container>
     );
   }
