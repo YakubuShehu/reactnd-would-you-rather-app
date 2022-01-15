@@ -1,7 +1,9 @@
 # MyReads React Fundamentals Project | React NanoDegree
 
-#### Description:
+### Description:
 This "Would You Rather?" Project is a web app that lets a user play the “Would You Rather?” game - where a user is asked a question in the form: “Would you rather [option A] or [option B] ?” - and they select one OR the other.
+
+* See Live Demo: https://react-nd-would-you-rather.herokuapp.com/
 
 
 ### App Functionalities:
@@ -21,15 +23,22 @@ This "Would You Rather?" Project is a web app that lets a user play the “Would
 * the icons used were acquired from [FontAwesome](https://fontawesome.com/).
 * and all the Matrix-related images were acquired from various sources resulting from a Google Search. Examples include: [subpng](https://www.subpng.com/png-k1h1lh/),  [icon-icons](https://icon-icons.com/icon/trinity-avatar/90829) and [icon-finder](https://www.iconfinder.com/)
 
+
 ---
 
-### Available Scripts:
-> In the project directory, you can run:
 
-##### ```npm start```
+## Installation:
+> To run the project, once in the project directory, you can run:
 
-This runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* ##### ```npm install``` or ```yarn install```
+* This will install all project dependencies to your local environment.
+
+* ##### ```npm start``` or ```yarn start```
+* This runs the app in the development mode.
+* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+---
 
 
 ### Useful Files:
@@ -124,10 +133,19 @@ Your code will talk to the database via 4 methods:
 | qid | String | The id of the question that was answered|
 | answer | String | The option the user selected. The value should be either `"optionOne"` or `"optionTwo"`|
 
+
 ---
+
 
 ## Acknowledgements:
 
 > The _DATA.JS contains starter code provided by the Udacity instructors.
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+---
+
+
+## Author:
+> Yakubu Shehu - [Github](https://github.com/YakubuShehu/), [Website](https://yakubushehu.com)
