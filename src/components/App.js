@@ -8,7 +8,6 @@ import Login from './Login';
 import MainNav from './MainNav';
 import Home from './Home';
 import PollQuestion from './PollQuestion';
-import PollResults from './PollResults';
 import NewPoll from './NewPoll';
 import Leaderboard from './Leaderboard';
 import Error404Page from './Error404Page';
@@ -47,7 +46,6 @@ class App extends React.Component {
                   <Route exact path="/" component={Home} />
                   <Route path="/questions/not-found" component={Error404Page} />
                   <Route exact path="/questions/:question_id" component={PollQuestion} />
-                  <Route exact path="/questions/:question_id/results" component={PollResults} />
                   <Route path="/add" component={NewPoll} />
                   <Route path="/leaderboard" component={Leaderboard} />
                   <Route component={Error404Page} />

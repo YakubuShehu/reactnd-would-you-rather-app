@@ -64,7 +64,7 @@ export class NewPoll extends Component {
 
         const disabled = this.state.option1 === '' || this.state.option2 === '';
 
-        if (this.state.validSubmit === true) {
+        if (this.state.isValidSubmission === true) {
             return <Redirect to="/" />;
         }
         return (

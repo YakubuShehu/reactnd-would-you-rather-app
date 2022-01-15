@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom'
 import { handleSaveQuestionAnswer } from '../actions/users';
+import PollResults from './PollResults';
 
 
 /* Boostrap Components & Styles */
@@ -54,7 +55,8 @@ export class PollQuestion extends Component {
 
     // Redirect to Results Page if already answered
     if (hasAnswered) {
-      return <Redirect to={`/questions/${question.id}/results`} />
+      // return <Redirect to={`/questions/${question.id}/results`} />
+      return (<PollResults />)
     }
 
     return (
